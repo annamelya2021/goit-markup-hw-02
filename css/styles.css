@@ -10,6 +10,7 @@ body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -97,8 +98,8 @@ body {
 
 /* преимущества benefits*/
 .benefits-description {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 }
 
@@ -134,6 +135,7 @@ body {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
+  font-weight: 400;
 }
 
 /* футер */
@@ -181,7 +183,7 @@ body {
 /* навигация в работах портфолио */
 .portfolio-button {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: hsl(250, 37%, 97%);
   font-family: inherit;
   text-decoration: none;
   cursor: pointer;
