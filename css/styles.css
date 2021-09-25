@@ -1,0 +1,208 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acsent-color: #2196f3;
+  --background-body-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-body-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* утилита убираем ul точки */
+.list {
+  list-style: none;
+}
+
+/* скрываем заголовки  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* вторичный текст цвет заголовков и навигации #212121 */
+/*о сновной цвет текста  #757575;*/
+/* белый #FFFFFF  */
+/* акцент и лого #2196F3 */
+/* цвет фона героя и футера #2F303A */
+/* основной цвет фона #FFFFFF */
+/* вторичный цвет фона #F5F4FA; */
+
+/* Верхнее и нижнее лого */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Оформление части лого цветом */
+.logo-color {
+  color: var(--acsent-color);
+}
+
+/* Навигационная часть */
+.site-nav .link,
+.contacts-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Применение ховера и фокуса в навигации */
+.link:hover,
+.link:focus {
+  color: var(--acsent-color);
+}
+
+/* герой */
+.hero-title {
+  color: var(--title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Кнопка героя */
+.hero .button {
+  color: var(--background-body-color);
+  background-color: var(--acsent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+/* преимущества benefits*/
+.benefits-description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* текстовые общие заголовки для секций и заголовки преимуществ*/
+.section-title,
+.section .section-title .benefits {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* заголовки для секций что мы делаем и наша команда */
+
+.workingplace-title,
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Наша команда */
+.name-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* наша команда должность */
+.team-position {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* футер */
+.footer-section {
+  background-color: #2f303a;
+}
+
+/* Изменение части цвета лого в футере */
+.logo-color-white {
+  color: var(--background-body-color);
+}
+/* адрес компании */
+.address {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.location {
+  color: var(--background-body-color);
+  background-color: #2f303a;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* портфолио */
+
+/* подсветка кнопки портфолио голубым */
+.link-current {
+  color: var(--acsent-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ефект ховера и фокуса в навигации */
+.links:hover,
+.links:focus {
+  color: var(--background-body-color);
+  background-color: var(--acsent-color);
+}
+
+/* навигация в работах портфолио */
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Должность заголовок в портфолио */
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Описание работ */
+.portfilio-description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
