@@ -3,14 +3,14 @@
   --title-text-color: #212121;
   --acsent-color: #2196f3;
   --background-body-color: #ffffff;
+  --footer-bgcolor: #2f303a;
+  --secondary-bgcolor: #f5f4fa;
 }
 
 body {
   background-color: var(--background-body-color);
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -55,10 +55,18 @@ body {
 }
 
 /* Навигационная часть */
-.site-nav .link,
-.contacts-nav .link {
+.site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.contacts-nav .link {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -74,60 +82,77 @@ body {
 }
 
 /* герой */
+
+.hero {
+  background-color: var(--footer-bgcolor);
+  text-align: center;
+}
 .hero-title {
-  color: var(--title-text-color);
+  color: var(--background-body-color);
+  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* Кнопка героя */
 .hero .button {
   color: var(--background-body-color);
   background-color: var(--acsent-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
 }
 
 /* преимущества benefits*/
-.benefits-description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-}
 
-/* текстовые общие заголовки для секций и заголовки преимуществ*/
-.section-title,
-.section .section-title .benefits {
+/*  заголовки для преимуществ*/
+.benefits-title {
   color: var(--title-text-color);
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* текст описание внутри преимуществ */
+.benefits-description {
   font-size: 14px;
   line-height: 1.14;
 }
 
 /* заголовки для секций что мы делаем и наша команда */
 
-.workingplace-title,
+.workingplace-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Наша команда */
+.team-section {
+  background-color: var(--secondary-bgcolor);
+}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
-/* Наша команда */
 .team-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* наша команда должность */
@@ -136,11 +161,12 @@ body {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 400;
+  text-align: center;
 }
 
 /* футер */
 .footer-section {
-  background-color: #2f303a;
+  background-color: var(--footer-bgcolor);
 }
 
 /* Изменение части цвета лого в футере */
@@ -148,20 +174,20 @@ body {
   color: var(--background-body-color);
 }
 /* адрес компании */
-.address {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
-
-  /* font-weight: 400; */
+.footer-address {
+  color: var(--background-body-color);
   font-size: 14px;
   line-height: 1.71;
+  /* font-style: inherit; */
 }
 
-.location {
-  color: var(--background-body-color);
-  background-color: #2f303a;
-  font-size: 14px;
-  line-height: 1.71;
+.footer-item {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-item:hover {
+  color: rgba(255, 255, 255, 0.854);
+  text-decoration: none;
 }
 
 /* портфолио */
@@ -170,23 +196,30 @@ body {
 .link-current {
   color: var(--acsent-color);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
+}
+/* навигация фильтр кнопки в работах портфолио */
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: hsl(250, 37%, 97%);
+  font-weight: 500;
+  line-height: 1.62;
+  font-size: 16;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ефект ховера и фокуса в навигации */
-.links:hover,
-.links:focus {
+.portfolio-button:hover,
+.portfolio-button :focus {
   color: var(--background-body-color);
   background-color: var(--acsent-color);
 }
 
-/* навигация в работах портфолио */
-.portfolio-button {
-  color: var(--title-text-color);
-  background-color: hsl(250, 37%, 97%);
-  font-family: inherit;
-  text-decoration: none;
-  cursor: pointer;
+.portfolio-button.link-current {
+  color: var(--background-body-color);
+  background-color: var(--acsent-color);
 }
 
 /* Должность заголовок в портфолио */
