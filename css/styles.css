@@ -107,6 +107,9 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
 }
+.hero .button:hover {
+  border: #188ce8 solid 3px;
+}
 
 /* преимущества benefits*/
 
@@ -178,12 +181,13 @@ body {
   color: var(--background-body-color);
   font-size: 14px;
   line-height: 1.71;
-  /* font-style: inherit; */
+  font-style: normal;
 }
 
 .footer-item {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-style: normal;
 }
 .footer-item:hover {
   color: rgba(255, 255, 255, 0.854);
